@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientManagement", "PatientManagement\PatientManagement.csproj", "{606525B8-5FC0-4E24-B49B-06291BF12EE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatientManagement.API", "PatientManagement\PatientManagement.API.csproj", "{606525B8-5FC0-4E24-B49B-06291BF12EE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientManagement.BusinessLogic", "PatientManagement.BusinessLogic\PatientManagement.BusinessLogic.csproj", "{ED393B35-7CF7-4B52-B252-FF72135D8AC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientManagement.DataAccess", "PatientManagement.DataAccess\PatientManagement.DataAccess.csproj", "{B88681A7-4B5C-4D9F-9612-1C7E96045509}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientManagement.Models", "PatientManagement.Models\PatientManagement.Models.csproj", "{796BF529-2B32-4429-8EBB-E8EC5D2EDCCE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{606525B8-5FC0-4E24-B49B-06291BF12EE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{606525B8-5FC0-4E24-B49B-06291BF12EE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{606525B8-5FC0-4E24-B49B-06291BF12EE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED393B35-7CF7-4B52-B252-FF72135D8AC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED393B35-7CF7-4B52-B252-FF72135D8AC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED393B35-7CF7-4B52-B252-FF72135D8AC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED393B35-7CF7-4B52-B252-FF72135D8AC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B88681A7-4B5C-4D9F-9612-1C7E96045509}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B88681A7-4B5C-4D9F-9612-1C7E96045509}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B88681A7-4B5C-4D9F-9612-1C7E96045509}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B88681A7-4B5C-4D9F-9612-1C7E96045509}.Release|Any CPU.Build.0 = Release|Any CPU
+		{796BF529-2B32-4429-8EBB-E8EC5D2EDCCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{796BF529-2B32-4429-8EBB-E8EC5D2EDCCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{796BF529-2B32-4429-8EBB-E8EC5D2EDCCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{796BF529-2B32-4429-8EBB-E8EC5D2EDCCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

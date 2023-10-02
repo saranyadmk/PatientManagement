@@ -2,8 +2,9 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
-using PatientManagement.DataBase;
 using PatientManagement.Filters;
+using PatientManagement.Models;
+using PatientManagement.Models.Models;
 using PatientManagement.Repository;
 
 namespace PatientManagement.Controllers

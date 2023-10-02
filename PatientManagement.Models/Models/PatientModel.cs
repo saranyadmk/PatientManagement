@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace PatientManagement.DataBase
+namespace PatientManagement.Models.Models
 {
     public enum Gender
     {
@@ -13,7 +13,7 @@ namespace PatientManagement.DataBase
         [Key]
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "FirstName is required"),StringLength(20)]
+        [Required(ErrorMessage = "FirstName is required"), StringLength(20)]
         public string FirstName { get; set; } = null!;
 
         [Required(ErrorMessage = "LastName is required"), StringLength(20)]
@@ -23,9 +23,9 @@ namespace PatientManagement.DataBase
         public DateTime DateOfBirth { get; set; }
 
         [EnumDataType(typeof(Gender), ErrorMessage = "Select either Male, Female or Unknown")]
-        public Gender Gender { get; set; } 
+        public Gender Gender { get; set; }
 
-        [Required(ErrorMessage = "Contact number is required."),StringLength(10)]
+        [Required(ErrorMessage = "Contact number is required."), StringLength(10)]
         [RegularExpression(@"^\d{10}$", ErrorMessage = "Please enter a valid 10 digit phone number.")]
         public string ContactNumber { get; set; } = null!;
 
@@ -52,6 +52,6 @@ namespace PatientManagement.DataBase
         public DateTime CreatedDate { get; set; }
 
         [Required]
-        public DateTime UpdatedDate { get; set; } 
+        public DateTime UpdatedDate { get; set; }
     }
 }

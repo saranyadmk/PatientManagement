@@ -3,12 +3,13 @@ using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
 using PatientManagement.Caching;
-using PatientManagement.DataBase;
 using PatientManagement.Filters;
 using PatientManagement.Migrations;
 using System.Reflection;
 using System.Text;
 using System.Linq.Dynamic.Core;
+using PatientManagement.DataAccess;
+using PatientManagement.Models.Models;
 
 namespace PatientManagement.Repository
 {
@@ -67,7 +68,7 @@ namespace PatientManagement.Repository
         public async Task<PatientModel> AddNewPatientAsync(PatientModel patient)
         {
             _context.Patients.Add(patient);
-            patient.CreatedDate = new DateTime(2023-09-21);
+            patient.CreatedDate = DateTime.Now;
             await _context.SaveChangesAsync();
             return patient;
         }

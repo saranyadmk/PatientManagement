@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using PatientManagement.DataBase;
+using PatientManagement.DataAccess;
 using PatientManagement.Models;
 using PatientManagement.Repository;
 using System.Text;
@@ -44,7 +44,7 @@ namespace PatientManagement
 
             builder.Services.AddControllers().AddNewtonsoftJson();
             builder.Services.AddTransient<PatientDbContext>();
-            builder.Services.AddTransient<ISecurityRepository, SecurityRepository>();
+            builder.Services.AddTransient<IAccountRepository, AccountRepository>();
             builder.Services.AddTransient<IPatientRepository, PatientRepository>();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();

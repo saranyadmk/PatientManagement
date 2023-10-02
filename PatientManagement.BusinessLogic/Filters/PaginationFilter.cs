@@ -1,4 +1,4 @@
-﻿using PatientManagement.DataBase;
+﻿using PatientManagement.Models.Models;
 
 namespace PatientManagement.Filters
 {

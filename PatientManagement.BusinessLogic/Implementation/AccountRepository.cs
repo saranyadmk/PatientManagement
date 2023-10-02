@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using PatientManagement.Models;
 using System.IdentityModel.Tokens.Jwt;
@@ -7,13 +8,13 @@ using System.Text;
 
 namespace PatientManagement.Repository
 {
-    public class SecurityRepository : ISecurityRepository
+    public class AccountRepository : IAccountRepository
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IConfiguration _configuration;
 
-        public SecurityRepository(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager,
+        public AccountRepository(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager,
             IConfiguration configuration)
         {
             _userManager = userManager;

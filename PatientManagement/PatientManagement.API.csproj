@@ -27,4 +27,9 @@
     <PackageReference Include="System.Linq.Dynamic.Core" Version="1.3.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PatientManagement.BusinessLogic\PatientManagement.BusinessLogic.csproj" />
+    <ProjectReference Include="..\PatientManagement.Models\PatientManagement.Models.csproj" />
+  </ItemGroup>
+
 </Project>

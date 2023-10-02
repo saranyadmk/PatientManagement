@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.JsonPatch;
-using PatientManagement.DataBase;
 using PatientManagement.Filters;
+using PatientManagement.Models.Models;
 
 namespace PatientManagement.Repository
 {

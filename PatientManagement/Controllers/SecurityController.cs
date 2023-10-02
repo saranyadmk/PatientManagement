@@ -9,9 +9,9 @@ namespace PatientManagement.Controllers
     [ApiController]
     public class SecurityController : ControllerBase
     {
-        private readonly ISecurityRepository _securityRepository;
+        private readonly IAccountRepository _securityRepository;
 
-        public SecurityController(ISecurityRepository securityRepository)
+        public SecurityController(IAccountRepository securityRepository)
         {
             _securityRepository = securityRepository;
         }
